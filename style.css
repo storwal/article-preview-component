@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body{
+  background-color: hsl(210, 46%, 95%);
+  color: hsl(217, 19%, 35%);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.left{
+  width: 40%;
+  height: 270px;
+  background: url(images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card{
+  display: flex;
+  width: 800px;
+  background-color: white;
+  border-radius: 10px;
+}
+img {
+  width: 50px;
+  border-radius: 50%;
+}
+.right{
+  width: 60%;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+.main-content{
+  margin-bottom: 20px;
+}
+.img-container{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.text-container{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+h4{
+  margin-bottom: 5px;
+}
+.name-date{
+  display: flex;
+  flex-direction: column;
+}
+.text-container a{
+  border-radius: 50%;
+  border: 0px;
+  margin-left: 150px;
+  
+  background-color: hsl(217, 21%, 79%);
+}
+.text-container img{
+  max-width: 50px;
+  max-height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.social-container{
+  display: flex;
+}
+#socials{
+  flex-direction: row;
+  padding: 15px 30px ;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  position: absolute;
+  margin-bottom: 300px;
+  display: none;
+  overflow: visible;
+  top: 45%;
+  right: -20%;
+  padding-right: 40px;
+}
+#socials p{
+  margin-top: 5px;
+  color:rgb(229, 231, 235);
+
+}
+#socialsButton{
+  margin-left: 160px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: rgb(238, 241, 252);
+}
+
+#socialsButton {
+  margin-bottom: 5px;
+  width: 50px;
+}
+#nuoli{
+  margin: 5px;
+}
+#icon{
+  fill: #6E8098;
+}
+.social-container a{
+  margin-left: 30px;
+  transform: scale(1);
+  max-width: 15px;
+  max-height: 15px;
+  border-radius: -0px;
+  align-items: center;
+  background-color: transparent;
+  margin-top: -10px;
+}
+.social-container p{
+  font-weight: 100;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+  .card{
+    width: 90%;
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+    border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  }
+  .right{
+    width: 100%;
+  }
+  .main-content{
+    width: 90%;
+  }
+  #socialsButton{
+    margin-left: 70px;
+  }
+  #socials{
+    top: 75%;
+  right: 0%;
+  }
+}
+
+@media only screen and (max-width:425px){
+  #socials{
+    top: 77%;
+  padding-right: 166px;
+  border-radius: 0px 0px 10px 10px;
+  }
+  #socialsButton{
+    position: absolute;
+    width: 11%;
+    height: 15%;
+    margin-top: 2px;
+  }
+  .right h3{
+font-size: 17px;
+  }
+  .right p{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:375px){
+  #socials{
+    top: 79%;
+    padding-right: 120px;
+  }
+}
